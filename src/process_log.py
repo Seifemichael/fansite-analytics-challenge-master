@@ -65,6 +65,6 @@ sorted_resources = sorted(resources.items(),key=lambda x: (-x[1], x[0]))
 with open('../log_output/resources.txt', 'w') as f:
     for k, v in sorted_resources[:10]:
         #print ("{key},{value}".format(key=k,value=v))
-        f.write("{key},{value}".format(key=k,value=v)+"\n")
+        f.write("{key}".format(key=k)+"\n")
 
 
